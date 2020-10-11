@@ -47,7 +47,7 @@ class Laser:
 		return collide(self, obj)
 
 class Ship:
-	COOLDOWN = 30
+	COOLDOWN = 15
 
 	def __init__(self, x, y, health=100):
 		self.x = x
@@ -141,10 +141,10 @@ def main():
 
 	enemies = []
 	wave_length = 5
-	enemy_vel = 1
+	enemy_vel = 2
 
 	player_vel = 5
-	laser_vel = 4
+	laser_vel = 10
 
 	player = Player(300,650)
 
